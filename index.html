@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>圖釘測測 - 開發測試用的定位模擬工具</title>
+<meta name="description" content="圖釘測測是給 App 開發者與測試人員使用的定位模擬工具，直接在 iPhone 上模擬系統定位，不用接電腦。">
+<link rel="icon" href="icon.png">
+<style>
+  :root { --bg:#f5f6fb; --card:#fff; --text:#1c1e2b; --muted:#5b6075; --accent:#3248d6; --line:#e3e5ef; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg:#12131b; --card:#1c1e2b; --text:#eef0f8; --muted:#a3a8bd; --accent:#8fa2ff; --line:#2c2f40; }
+  }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--text);
+         font-family:-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC","Microsoft JhengHei",sans-serif; line-height:1.7; }
+  main { max-width:860px; margin:0 auto; padding:48px 16px 64px; }
+  header { text-align:center; }
+  header img { width:112px; height:112px; border-radius:25px; box-shadow:0 8px 24px rgba(30,40,120,.25); }
+  h1 { font-size:2rem; margin:20px 0 4px; }
+  .sub { color:var(--muted); margin:0 0 24px; }
+  .btn { display:inline-block; background:var(--accent); color:#fff; text-decoration:none; font-weight:700;
+         padding:12px 26px; border-radius:999px; }
+  @media (prefers-color-scheme: dark) { .btn { color:#12131b; } }
+  h2 { font-size:1.25rem; margin:44px 0 12px; }
+  .shots { display:grid; grid-template-columns:repeat(3,1fr); gap:12px; margin-top:36px; }
+  .shots img { width:100%; border-radius:18px; display:block; }
+  ul { padding-left:1.2em; margin:0; }
+  li { margin:6px 0; }
+  .card { background:var(--card); border:1px solid var(--line); border-radius:16px; padding:18px 20px; }
+  footer { margin-top:48px; padding-top:20px; border-top:1px solid var(--line); color:var(--muted); font-size:.9rem; text-align:center; }
+  a { color:var(--accent); }
+  @media (max-width:560px) { .shots { grid-template-columns:1fr; max-width:320px; margin-left:auto; margin-right:auto; } h1 { font-size:1.6rem; } }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <img src="icon.png" alt="圖釘測測 App 圖示">
+    <h1>圖釘測測</h1>
+    <p class="sub">開發測試用的定位模擬工具</p>
+    <a class="btn" href="https://apps.apple.com/tw/app/id6832485936">在 App Store 下載</a>
+  </header>
+
+  <div class="shots">
+    <img src="shot1.jpg" alt="在地圖上點選位置並傳送">
+    <img src="shot2.jpg" alt="編輯路線並選擇移動速度">
+    <img src="shot3.jpg" alt="路線播放中調整速度">
+  </div>
+
+  <h2>這是什麼</h2>
+  <p>圖釘測測是給 App 開發者與測試人員使用的定位模擬工具。它直接在你的 iPhone 上模擬系統定位，不需要連接電腦，方便在真機上測試與位置有關的功能。</p>
+
+  <h2>主要功能</h2>
+  <div class="card">
+    <ul>
+      <li>地圖選點：點一下地圖，或搜尋地址、地點名稱，把模擬位置傳送到那裡。</li>
+      <li>路線播放：排出路線，以步行、跑步、單車或開車的速度沿道路移動，播放中可以調整速度。</li>
+      <li>匯入路線：貼上 Google 地圖或 Apple 地圖的導航分享連結，轉成可以播放的路線。</li>
+      <li>收藏：把常用的測試地點存起來。</li>
+      <li>一鍵恢復：隨時回到真實位置。</li>
+      <li>支援 iPhone Duo 展開螢幕的左右並排版面。</li>
+    </ul>
+  </div>
+
+  <h2>使用前須知</h2>
+  <div class="card">
+    <ul>
+      <li>需要開啟 iPhone 的「開發者模式」並完成一次配對設定，App 內有逐步引導。</li>
+      <li>模擬位置會影響整台 iPhone 上的所有 App。需要報案、求救、叫車或導航時，請先恢復真實位置。</li>
+      <li>本 App 僅供開發與測試用途，請遵守各 App 與服務的使用規定。</li>
+    </ul>
+  </div>
+
+  <footer>
+    <p><a href="https://sites.google.com/view/pinpin-privacy">隱私權政策與支援</a></p>
+    <p>© 2026 圖釘測測</p>
+  </footer>
+</main>
+</body>
+</html>
