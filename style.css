@@ -1,0 +1,35 @@
+:root { --bg:#f5f6fb; --card:#fff; --text:#1c1e2b; --muted:#5b6075; --accent:#3248d6; --line:#e3e5ef; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg:#12131b; --card:#1c1e2b; --text:#eef0f8; --muted:#a3a8bd; --accent:#8fa2ff; --line:#2c2f40; }
+  }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--text);
+         font-family:-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC","Microsoft JhengHei",sans-serif; line-height:1.7; }
+  main { max-width:860px; margin:0 auto; padding:48px 16px 64px; }
+  header { text-align:center; }
+  header img { width:112px; height:112px; border-radius:25px; box-shadow:0 8px 24px rgba(30,40,120,.25); }
+  h1 { font-size:2rem; margin:20px 0 4px; }
+  .sub { color:var(--muted); margin:0 0 24px; }
+  .btn { display:inline-block; background:var(--accent); color:#fff; text-decoration:none; font-weight:700;
+         padding:12px 26px; border-radius:999px; }
+  @media (prefers-color-scheme: dark) { .btn { color:#12131b; } }
+  h2 { font-size:1.25rem; margin:44px 0 12px; }
+  .shots { display:grid; grid-template-columns:repeat(3,1fr); gap:12px; margin-top:36px; }
+  .shots img { width:100%; border-radius:18px; display:block; }
+  ul { padding-left:1.2em; margin:0; }
+  li { margin:6px 0; }
+  .card { background:var(--card); border:1px solid var(--line); border-radius:16px; padding:18px 20px; }
+  footer { margin-top:48px; padding-top:20px; border-top:1px solid var(--line); color:var(--muted); font-size:.9rem; text-align:center; }
+  a { color:var(--accent); }
+  @media (max-width:560px) { .shots { grid-template-columns:1fr; max-width:320px; margin-left:auto; margin-right:auto; } h1 { font-size:1.6rem; } }
+  .btn.ghost { background:transparent; color:var(--accent); border:2px solid var(--accent); padding:10px 24px; }
+  .actions { display:flex; flex-wrap:wrap; gap:10px; justify-content:center; }
+  .actions .btn { margin:0; }
+  .uses { display:grid; grid-template-columns:repeat(2,1fr); gap:14px; margin-top:28px; }
+  .use h3 { margin:0 0 6px; font-size:1.08rem; display:flex; align-items:center; gap:10px; }
+  .use .ico { flex:none; width:38px; height:38px; border-radius:11px; display:grid; place-items:center; font-size:1.2rem;
+              background:color-mix(in srgb, var(--accent) 14%, transparent); }
+  .use p.lead { margin:0 0 8px; color:var(--muted); }
+  .note { margin-top:28px; border-left:4px solid var(--accent); }
+  .back { display:inline-block; margin-bottom:20px; text-decoration:none; font-weight:600; }
+  @media (max-width:640px) { .uses { grid-template-columns:1fr; } }
